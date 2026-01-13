@@ -3,7 +3,7 @@ A desktop Tic Tac Toe application developed using Python’s Tkinter library. It
 
 
 
-Key Features:
+✨Key Features:
 
 1.Two-Player Local Gameplay:
 The game supports two players playing on the same system, alternating turns between X and O.
@@ -17,79 +17,79 @@ The game automatically switches turns after each valid move, ensuring fair gamep
 4.Win and Draw Detection:
 The program checks all possible winning combinations and correctly identifies:
 
-. X win
+✔ X win
 
-. O win
+✔ O win
 
-. Draw condition when the board is full.
+✔ Draw condition when the board is full.
 
 5.Scoreboard System
 A live scoreboard tracks:
 
-. Total wins for X
+✔ Total wins for X
 
-. Total wins for O
+✔ Total wins for O
 
-. Total draws:
+✔ Total draws:
    Scores persist across rounds until manually reset.
 
 6.Visual Feedback:
 
-. X and O are displayed in different colors for better clarity.
+✔ X and O are displayed in different colors for better clarity.
 
-. Message pop-ups announce game results immediately.
+✔ Message pop-ups announce game results immediately.
 
 7.Game and Score Controls:
 
-. Restart Game resets only the board.
+✔ Restart Game resets only the board.
 
-. Reset Score clears both the board and scoreboard.
+✔ Reset Score clears both the board and scoreboard.
 
-. Quit button safely closes the application.
-
-
+✔ Quit button safely closes the application.
 
 
 
-Technical Architecture:
+
+
+🛠️ Technical Architecture:
 
 1.Programming Language and Library:
 
-. Language: Python
+ ✔ Language: Python
 
-. GUI Framework: Tkinter
+ ✔ GUI Framework: Tkinter
 
 2.State Management:
 
-. xState and oState arrays track board positions
+ ✔ xState and oState arrays track board positions
 
-. Each index represents one cell of the grid
+ ✔ Each index represents one cell of the grid
 
-. Binary values are used to simplify win detection
+ ✔ Binary values are used to simplify win detection
 
 3. Game Logic Layer:
 
-. Predefined wins list stores all winning index combinations
+ ✔ Predefined wins list stores all winning index combinations
 
-. check_win() evaluates the current game state after every move
+ ✔ check_win() evaluates the current game state after every move
 
 4.Event-Driven Architecture:
 
-.Each button click triggers on_button_click()
+ ✔ Each button click triggers on_button_click()
 
-.Tkinter handles events without blocking the main loop
+ ✔ Tkinter handles events without blocking the main loop
 
 5.Separation of Responsibilities:
 
-. UI rendering handled by Tkinter widgets
+ ✔ UI rendering handled by Tkinter widgets
 
-. Game rules and scoring handled by dedicated functions
+ ✔ Game rules and scoring handled by dedicated functions
 
-. Control logic separated from display logic
+ ✔ Control logic separated from display logic
 
-6.Reset and Lifecycle Management
+6.Reset and Lifecycle Management:
 
-. reset_game() clears the board while keeping scores
+ ✔ reset_game() clears the board while keeping scores
 
 . reset_score() resets both board and scoreboard
 
