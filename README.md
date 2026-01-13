@@ -46,3 +46,52 @@ A live scoreboard tracks:
 . Reset Score clears both the board and scoreboard.
 
 . Quit button safely closes the application.
+
+
+
+Technical Architecture:
+
+1.Programming Language and Library:
+
+. Language: Python
+
+. GUI Framework: Tkinter
+
+2.State Management:
+
+. xState and oState arrays track board positions
+
+. Each index represents one cell of the grid
+
+. Binary values are used to simplify win detection
+
+3. Game Logic Layer:
+
+. Predefined wins list stores all winning index combinations
+
+. check_win() evaluates the current game state after every move
+
+4.Event-Driven Architecture:
+
+.Each button click triggers on_button_click()
+
+.Tkinter handles events without blocking the main loop
+
+5.Separation of Responsibilities:
+
+. UI rendering handled by Tkinter widgets
+
+. Game rules and scoring handled by dedicated functions
+
+. Control logic separated from display logic
+
+6.Reset and Lifecycle Management
+
+. reset_game() clears the board while keeping scores
+
+. reset_score() resets both board and scoreboard
+
+. Application lifecycle managed by window.mainloop()
+
+7.User Feedback and Dialog System
+Tkinter’s messagebox module is used to notify players of game outcomes without interrupting application flow.
