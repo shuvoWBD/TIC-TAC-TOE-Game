@@ -49,6 +49,8 @@ A live scoreboard tracks:
 
 
 
+
+
 Technical Architecture:
 
 1.Programming Language and Library:
